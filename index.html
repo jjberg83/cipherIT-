@@ -18,21 +18,18 @@
 
 <button>Cipher It!</button>
 
-
-
 <script>
 
-let textInput = document.querySelector('textarea');
 let button = document.querySelector('button');
+let textarea = document.querySelector('textarea');
 
-function addPara() {
-  let para = document.createElement('p');
-  let paraContent = document.createTextNode('Jojomensann');
-  para.appendChild(paraContent);
-  document.body.appendChild(para);
+function changePara() {
+  let inputText = textarea.value;
+  inputText.replace(/e/g, '3');
+  console.log(inputText);
 }
 
-button.addEventListener('click', addPara);
+button.addEventListener('click', changePara);
 
 </script>
 </body>
