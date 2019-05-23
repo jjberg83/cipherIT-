@@ -11,8 +11,9 @@
 // button.addEventListener('click', changePara);
 
 let btn = document.querySelector('button');
-let txt = document.querySelector('p');
+let oldText = document.getElementById('oldOne');
+let newText = document.getElementById('newOne');
 
 btn.onclick = function() {
-  txt.textContent = 'Hello, I am still alive.';
+  newText.textContent = oldText.textContent.replace(/e/gi, 3);
 };
