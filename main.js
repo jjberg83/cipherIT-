@@ -13,6 +13,7 @@
 let btn = document.querySelector('button');
 let oldText = document.getElementById('oldOne');
 let newText = document.getElementById('newOne');
+let writtenText = document.getElementById('writtenOne')
 
 btn.onclick = function() {
   newText.textContent = oldText.textContent.replace(/e/gi, 3);
