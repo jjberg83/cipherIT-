@@ -11,12 +11,8 @@
 // button.addEventListener('click', changePara);
 
 let btn = document.querySelector('button');
-
-function random(number) {
-  return Math.floor(Math.random() * (number +1));
-}
+let txt = document.querySelector('p');
 
 btn.onclick = function() {
-  let rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-  document.body.style.backgroundColor = rndCol;
+  txt.textContent = 'Hello, I am still alive.';
 };
