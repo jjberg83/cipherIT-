@@ -16,5 +16,6 @@ let newText = document.getElementById('newOne');
 let writtenText = document.getElementById('writtenOne')
 
 btn.onclick = function() {
-  newText.textContent = oldText.textContent.replace(/e/gi, 3);
+  let inputText = writtenText.value;
+  newText.textContent = inputText.replace(/e/gi, 3);
 };
