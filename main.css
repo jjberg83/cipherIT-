@@ -1,3 +1,21 @@
 textarea {
   display: block;
 }
+.pinupSide {
+  background: #045;
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+.cipherSide {
+  width: 50%;
+  float: left;
+}
+
+/* MEDIA QUERIES
+---------------------------------------------- */
+@media (max-width: 576px) {
+  .pinupSide {
+    display: none;
+  }
+}
