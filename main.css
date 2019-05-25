@@ -1,5 +1,9 @@
-textarea {
-  display: block;
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 .container {
   max-width: 992px;
@@ -7,7 +11,7 @@ textarea {
   background: yellow;
 }
 .pinupSide {
-  background: #045;
+  background: green;
   width: 50%;
   height: 200px;
   float: left;
@@ -15,6 +19,14 @@ textarea {
 .cipherSide {
   width: 50%;
   float: left;
+  background: red;
+}
+textarea {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 /* MEDIA QUERIES
@@ -22,5 +34,9 @@ textarea {
 @media (max-width: 576px) {
   .pinupSide {
     display: none;
+  }
+  .cipherSide {
+    float: none;
+    width: 100%;
   }
 }
