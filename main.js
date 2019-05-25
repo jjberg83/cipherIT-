@@ -1,5 +1,5 @@
 let btnCipher = document.getElementById('cipherIT');
-let btnUnCipher = document.getElementById('unCipher');
+let btnDeCipher = document.getElementById('deCipher');
 let oldText = document.getElementById('oldOne');
 let newText = document.getElementById('newOne');
 let writtenText = document.querySelector('textarea');
@@ -35,7 +35,7 @@ btnCipher.onclick = function() {
                                  .replace(/ /gi, '*');
 }
 
-btnUnCipher.onclick = function() {
+btnDeCipher.onclick = function() {
   let inputText = writtenText.value;
   newText.textContent = inputText.replace(/>/gi, 'e')
                                  .replace(/""/gi, 'a')
