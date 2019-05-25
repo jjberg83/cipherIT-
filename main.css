@@ -1,6 +1,11 @@
 textarea {
   display: block;
 }
+.container {
+  max-width: 992px;
+  margin: 0 auto;
+  background: yellow;
+}
 .pinupSide {
   background: #045;
   width: 50%;
