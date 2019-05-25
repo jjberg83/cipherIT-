@@ -31,7 +31,8 @@ btnCipher.onclick = function() {
                                  .replace(/x/gi, 8)
                                  .replace(/z/gi, 9)
                                  .replace(/j/gi, 0)
-                                 .replace(/q/gi, '@');
+                                 .replace(/q/gi, '@')
+                                 .replace(/ /gi, '*');
 }
 
 btnUnCipher.onclick = function() {
@@ -61,7 +62,9 @@ btnUnCipher.onclick = function() {
                                  .replace(/8/gi, 'x')
                                  .replace(/9/gi, 'z')
                                  .replace(/0/gi, 'j')
-                                 .replace(/@/gi, 'q');
+                                 .replace(/@/gi, 'q')
+                                 .replace(/\*/gi, ' ');
 }
 //0!1 p!&!# 0ø#?/€ 0!/((!/ 2!#1
+//0!1 :!&!# 0ø#?/€ 0!/((!/ 2!#1
 //jeg heter jørund jenssen berg
