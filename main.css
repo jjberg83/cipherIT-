@@ -5,14 +5,17 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+body {
+  background: #3ff4fe;
+}
 .container {
   max-width: 992px;
   height: 100%;
   margin: 0 auto;
-  background: yellow;
+  /* background: blue; */
 }
 .pinupSide {
-  background: green;
+  /* background: green; */
   width: 50%;
   height: 100%;
   float: left;
@@ -23,7 +26,7 @@ html {
 }
 .cipherSide {
   position: relative;
-  background: red;
+  /* background: red; */
   width: 50%;
   height: 500px;
   float: left;
@@ -33,7 +36,7 @@ html {
   top: 25%;
   height: 50%;
   width: 100%;
-  background: yellow;
+  /* background: yellow; */
 }
 textarea {
   display: block;
